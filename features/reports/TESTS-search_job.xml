@@ -1,0 +1,43 @@
+<testsuite name="search_job.Search job field" tests="3" errors="0" failures="0" skipped="0" time="75.509297" timestamp="2024-07-07T21:52:03.610289" hostname="DESKTOP-1H9QDGA"><testcase classname="search_job.Search job field" name="There is more than one jobs" status="passed" time="25.011862"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @scenario1
+  Scenario: There is more than one jobs
+    Given the client got navigated to home page ... passed in 7.496s
+    When the client enter a valid job into the seach box field ... passed in 10.164s
+    And the client click on seach icon ... passed in 5.108s
+    Then valid jobs should be displayed in search results ... passed in 2.243s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="search_job.Search job field" name="There is not any jobs" status="passed" time="25.22398"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @scenario2
+  Scenario: There is not any jobs
+    Given the client got navigated to home page ... passed in 7.708s
+    When the client enter an invalid job into the seach box field ... passed in 10.159s
+    And the client click on seach icon ... passed in 5.113s
+    Then zero valid jobs should be displayed in search results ... passed in 2.244s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="search_job.Search job field" name="Find remote jobs" status="passed" time="25.273455"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @scenario3
+  Scenario: Find remote jobs
+    Given the client got navigated to home page ... passed in 7.707s
+    When the client enter TELETRABAJO into the search box field ... passed in 10.245s
+    And the client click on seach icon ... passed in 5.102s
+    Then valid jobs should be displayed in search results ... passed in 2.220s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
